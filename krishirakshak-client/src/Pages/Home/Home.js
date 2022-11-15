@@ -46,9 +46,10 @@ const Home = () => {
                         <Sidebar />
                     </Box>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={7} md={6}>
                     <Box display="flex" alignItems='center' flexDirection="column">
                         <Story />
+                        {/* <RightBar/> */}
                         <AddPost OpenCreatePost = {setCreatePost} />
                         {!PostGState.userPosts.length && !PostGState.all_Posts.length ? 
                             <Box className='noPosts' marginY="30px" display='flex' flexDirection='column' justifyContent='center' textAlign='center'>
@@ -72,6 +73,7 @@ const Home = () => {
                         <RightBar />
                         <RightBar />
                         <RightBar />
+
                     </Box>
                 </Grid>
             </Grid>
