@@ -70,10 +70,6 @@ const Home = () => {
                 <Grid item xs={12} md={3}>
                     <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
                         <RightBar />
-                        <RightBar />
-                        <RightBar />
-                        <RightBar />
-
                     </Box>
                 </Grid>
             </Grid>

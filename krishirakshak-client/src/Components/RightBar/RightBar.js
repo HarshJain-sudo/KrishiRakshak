@@ -1,36 +1,61 @@
-import { Box , Typography } from "@material-ui/core"
-import Profile from '../../Assets/images/profile.jpeg'
-import './RightBar.scss'
+import { Box, Typography } from "@material-ui/core";
+import Profile from "../../Assets/images/profile.jpeg";
+import "./RightBar.scss";
 const RightBar = () => {
-    return (
-        <Box className='Friends'>
-            <Box className="title" display='flex' justifyContent='space-between' alignItems='flex-start' paddingY='10px'>
-                <Box>
-                    <Typography variant='h6'>PM-KISAN SCHEME</Typography>
-                    {/* <Typography variant="subtitle">5 friends</Typography> */}
-                </Box>
-                {/* <Typography variant='subtitle2' color='primary'>See All Friends</Typography> */}
+  return (
+    <>
+      <a href="https://agrimp.com/" target="_blank" rel="noreferrer">
+        <Box className="Friends">
+          <Box
+            className="title"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="flex-start"
+            paddingY="10px"
+          >
+            <Box>
+              <Typography variant="h6" color='primary'>BUY AND SELL CROPS</Typography>
             </Box>
-            <Box className="Content" display='flex' flexWrap='wrap'>
-                <Box display='flex' >
-                    <img src="https://pmkisan.gov.in/new_images/SabkaSathSabkaVikasSabkaViswas.jpg" width='500px' height='100px' alt="friendName" />
-                    {/* <Typography variant="caption">Chandrakant</Typography> */}
-                </Box>
-                {/* <Box display='flex' flexDirection="column">
-                    <img src="https://cdn.pixabay.com/photo/2022/03/16/06/18/bird-7071662__340.jpg" width='100px' height='100px' alt="friendName" />
-                    <Typography variant="caption">Reshma</Typography>
-                </Box> */}
-                {/* <Box display='flex' flexDirection="column">
-                    <img src="https://cdn.pixabay.com/photo/2016/05/17/22/16/baby-1399332__340.jpg" width='100px' height='100px' alt="friendName" />
-                    <Typography variant="caption">Anand</Typography>
-                </Box> */}
-                {/* <Box display='flex' flexDirection="column">
-                    <img src="https://images.news18.com/ibnlive/uploads/2022/01/army-day-16421788574x3.jpg" width='100px' height='100px' alt="friendName" />
-                    <Typography variant="caption">Rajiv</Typography>
-                </Box> */}
+          </Box>
+          <Box className="Content" display="flex" flexWrap="wrap">
+            <Box display="flex">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/03/02/20/13/grocery-1232944__480.jpg"
+                width="500px"
+                height="300px"
+                alt="friendName"
+              />
             </Box>
+          </Box>
         </Box>
-    )
-}
+      </a>
+      {/* <a href="https://indiaagronet.com/farm-machinery/Farm-Equipment-Classifieds/" target="_blank" rel="noreferrer">
+        <Box className="Friends">
+          <Box
+            className="title"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="flex-start"
+            paddingY="10px"
+          >
+            <Box>
+              <Typography variant="h6"  color='primary'>BUY/SELL FARMING EQUIPMENTS</Typography>
+            </Box>
+          </Box>
+          <Box className="Content" display="flex" flexWrap="wrap">
+            <Box display="flex">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/07/14/02/10/farm-5402555__480.jpg"
+                width="500px"
+                height="300px"
+                alt="friendName"
+              />
+            </Box>
+          </Box>
+        </Box>
+      </a> */}
+    </>
+  );
+};
 
-export default RightBar
+export default RightBar;
