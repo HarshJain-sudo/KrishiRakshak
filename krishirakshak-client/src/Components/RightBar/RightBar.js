@@ -29,7 +29,7 @@ const RightBar = () => {
           </Box>
         </Box>
       </a>
-      {/* <a href="https://indiaagronet.com/farm-machinery/Farm-Equipment-Classifieds/" target="_blank" rel="noreferrer">
+      <a href="https://indiaagronet.com/farm-machinery/Farm-Equipment-Classifieds/" target="_blank" rel="noreferrer">
         <Box className="Friends">
           <Box
             className="title"
@@ -53,7 +53,7 @@ const RightBar = () => {
             </Box>
           </Box>
         </Box>
-      </a> */}
+      </a>
     </>
   );
 };
