@@ -16,17 +16,31 @@ const Sidebar = () => {
   return (
     <Box className="Sidebar">
       <List component="nav" aria-label="main mailbox folder">
-        <Link to="/friends">
-          <ListItem button>
-            <img
-              src="https://media.istockphoto.com/id/491151340/photo/tractor-on-the-field.jpg?s=612x612&w=0&k=20&c=GuRHohYsC-iq6grpzkZPTPj55lDX1hIQrGhA2MNLTqI="
-              alt="groups"
-              width="600px"
-              height="500px"
-            />
-            {/* <Typography variant="subtitle1">Farmers </Typography> */}
-          </ListItem>
-        </Link>
+      <a href="https://www.bighaat.com/collections/tractors" target="_blank" rel="noreferrer">
+        <Box className="Friends">
+          <Box
+            className="title"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="flex-start"
+            paddingY="10px"
+          >
+            <Box>
+              <Typography variant="h6"  color='primary'>BUY SEEDS FOR FARMING</Typography>
+            </Box>
+          </Box>
+          <Box className="Content" display="flex" flexWrap="wrap">
+            <Box display="flex">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/07/02/06/47/wheat-381848__480.jpg"
+                width="500px"
+                height="270px"
+                alt="friendName"
+              />
+            </Box>
+          </Box>
+        </Box>
+      </a>
         <Link to="/profile">
           <ListItem button className="profilePic">
             <img src={UserGState.info.profile_pic} width="28px" height="28px" />
@@ -90,17 +104,6 @@ const Sidebar = () => {
           <ExitToAppIcon />
           <Typography variant="subtitle1">Logout</Typography>
         </ListItem>
-        <Link to="/friends">
-          <ListItem button>
-            <img
-              src="https://media.istockphoto.com/id/1316735334/photo/young-indian-farmer-with-agronomist-at-banana-field.jpg?b=1&s=170667a&w=0&k=20&c=wyHxjzuVYLwXxq1fu4XLUUc0gnx2tVznDz0Wxuw7_gE="
-              alt="groups"
-              width="600px"
-              height="500px"
-            />
-            {/* <Typography variant="subtitle1">Farmers </Typography> */}
-          </ListItem>
-        </Link>
       </List>
     </Box>
   );

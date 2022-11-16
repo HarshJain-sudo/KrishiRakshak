@@ -42,6 +42,7 @@ const Navbar = () => {
                 </Grid>
                 <Grid item xs={6} sm={4} md={4}>
                     <Box className="Right" >
+                         {/* <Link to='/Profile'><img src={Logo} alt="facebook" width="40px" /></Link> */}
                         <span><MessageIcon/> </span>
                         <span><NotificationsIcon /></span>
                     </Box>
